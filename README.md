@@ -8,19 +8,21 @@ Fully Automated SGMBL and WGMBL
 --------------------------------------------------
 To build probabilistic models for SGM and blast database,run following command on your terminal prompt:
 
-```ruby 
-sh sgmmodel_blastdb.sh markov_order confid1 confid2 confid3
-```
+```sh sgmmodel_blastdb.sh markov_order confid1 confid2 confid3```
  
 Similarly to build probabilistic models for whole genome and blast database together, run following command on your terminal prompt:
 
-usage: sh wgmmodel_blastdb.sh m 
+```
+sh wgmmodel_blastdb.sh m
+``` 
 
 Once models and blast database are ready, they can be use for all future analysis, without regenerating them.
 
 Then you can run following script with any “metagenome file” (that you want to classify,test.fa here) and “prefix” for output files(output here) as input. The following script will also ask you to choose whether you want to use SGM or WGM for classifying reads. If WGM then which Markov model order. Also if user wants to do blast testfile or not.
 
-usgae: sh autoclassify.sh test.fa output
+```
+sh autoclassify.sh test.fa output
+```
 
 --------------------------------------------------
 INPUTS
