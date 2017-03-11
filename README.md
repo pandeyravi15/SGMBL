@@ -49,7 +49,7 @@ sh sgmmodel_blastdb.sh 2 0.90 0.95 0.99
 
 where 2 is Markov model order, 0.90 is the threshold for segmentation, 0.95 is the threshold for first-step clustering (grouping contiguous similar segments), and 0.99 is the threshold for second-step clustering (grouping non-contiguous similar segments or clusters). These 4 parameters can be tuned by the user from command prompt.
 
-Also ```BLAST+``` tools must be installed on your computer. Again same genome as used for building models will be use to make BLAST DB. 
+Also ```BLAST+``` tools must be installed on your computer. Genomes used for building models will be use to make BLAST database. 
 
 -----------------------------------
 OUTPUTS
