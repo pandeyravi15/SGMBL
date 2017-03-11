@@ -8,7 +8,9 @@ Fully Automated SGMBL and WGMBL
 --------------------------------------------------
 To build probabilistic models for SGM and blast database,run following command on your terminal prompt:
 
-```sh sgmmodel_blastdb.sh markov_order confid1 confid2 confid3```
+```
+sh sgmmodel_blastdb.sh markov_order confid1 confid2 confid3
+```
  
 Similarly to build probabilistic models for whole genome and blast database together, run following command on your terminal prompt:
 
@@ -40,7 +42,10 @@ confid2: Threshold parameter for the first-step clustering (grouping contiguous 
 confid3: Threshold parameter for the second-step clustering (grouping non-contiguous similar segments or clusters)(takes values between 0 -1)
 you can tune/change segmentation and clustering parameters as well as markov model order at which you want to segment all genomes.
 
-For e.g. : sh sgmmodel_blastdb.sh 2 0.90 0.95 0.99
+For e.g. : 
+```
+sh sgmmodel_blastdb.sh 2 0.90 0.95 0.99
+```
 
 where 2 is Markov model order, 0.90 is the threshold for segmentation, 0.95 is the threshold for first-step clustering (grouping contiguous similar segments), and 0.99 is the threshold for second-step clustering (grouping non-contiguous similar segments or clusters). These 4 parameters can be tuned by the user from command prompt.
 
@@ -67,9 +72,12 @@ To add new genomes to existing SGM and WGM models
 --------------------------------------------------------------------
 Make a directory “addgenomes”. Keep all new genomes in this folder and also add to folder genomes that you want to add to existing SGM and WGM. Then run the following script for adding models to SGM and WGM directories repectively:
 
-usage: sh addsgmmodel.sh markov_order confid1 confid2 confid3
-
-usage: sh addwgmmodel.sh m
+```
+sh addsgmmodel.sh markov_order confid1 confid2 confid3
+```
+```
+sh addwgmmodel.sh m
+```
 
 Users have to also update taxonomy.txt file manually for new genomes.
 
