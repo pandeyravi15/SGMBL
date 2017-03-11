@@ -60,7 +60,7 @@ All outputs will be stored in a folder Results.
 For all the output files, if user choose SGM it will have sgm in output files and wgm.m if user choose wgm with markov order m.
 
 Files with these suffix will contain final classification:
-1. 'final.classify.txt' : Classification with only SGM (or WGM). 
+1. ruby 'final.classify.txt' : Classification with only SGM (or WGM). 
 
 2. formulabased.taxonomy.txt : Classification with only SGMBL using formula for combining BLAST and SGM (or WGM) prediction.
 
