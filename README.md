@@ -1,7 +1,7 @@
 # SGMBL
 SGMBL: Segmented Genome Model with BLast
-Title: Towards more robust metagenome profiling
-Authors:  Ravi S. Pandey, David J. Burks and Rajeev K. Azad
+#Title: Towards more robust metagenome profiling
+#Authors:  Ravi S. Pandey, David J. Burks and Rajeev K. Azad
 ##Scripts were written in shell, which call other scripts written in C, perl and python.###
 
 --------------------------------------------------
