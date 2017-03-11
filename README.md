@@ -6,14 +6,13 @@
 --------------------------------------------------
 Fully Automated SGMBL and WGMBL
 --------------------------------------------------
-To build probabilistic models for SGM and blast database,run following command on your terminal prompt:
+To build probabilistic models for SGM and blast database:
 
 ```
 sh sgmmodel_blastdb.sh markov_order confid1 confid2 confid3
 ```
  
-Similarly to build probabilistic models for whole genome and blast database together, run following command on your terminal prompt:
-
+Similarly to build probabilistic models for whole genome and blast database together:
 ```
 sh wgmmodel_blastdb.sh m
 ``` 
