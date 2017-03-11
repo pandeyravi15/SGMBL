@@ -30,16 +30,16 @@ sh autoclassify.sh test.fa output
 INPUTS
 --------------------------------------------------
 
-input_file for building models: Genome Files in fasta format
-keep all genomes files in a folder ”genomes” with name “accessionid.fna” format (For e.g.: NC_12345.fna)
+Input_file for building models: Genome Files in fasta format
+keep all genomes files in a folder ”genomes” with name “AccessionId.fna” format (For e.g.: NC_12345.fna)
 
-Markov_order for building SGM: 0, 1, or 2. It is Markov model order.
+```Markov_order``` for building SGM: 0, 1, or 2. It is Markov model order.
 
-confid1: Threshold parameter for the segmentation(takes values between 0 - 1)
+```confid1```: Threshold parameter for the segmentation(takes values between 0 - 1)
 
-confid2: Threshold parameter for the first-step clustering (grouping contiguous similar segments)(take values between 0 - 1)
+```confid2```: Threshold parameter for the first-step clustering (grouping contiguous similar segments)(take values between 0 - 1)
 
-confid3: Threshold parameter for the second-step clustering (grouping non-contiguous similar segments or clusters)(takes values between 0 -1)
+```confid3```: Threshold parameter for the second-step clustering (grouping non-contiguous similar segments or clusters)(takes values between 0 -1)
 you can tune/change segmentation and clustering parameters as well as markov model order at which you want to segment all genomes.
 
 For e.g. : 
@@ -49,7 +49,7 @@ sh sgmmodel_blastdb.sh 2 0.90 0.95 0.99
 
 where 2 is Markov model order, 0.90 is the threshold for segmentation, 0.95 is the threshold for first-step clustering (grouping contiguous similar segments), and 0.99 is the threshold for second-step clustering (grouping non-contiguous similar segments or clusters). These 4 parameters can be tuned by the user from command prompt.
 
-Also BLAST+ tools must be installed on your computer. Again same genome as used for building models will be use to make BLAST DB. 
+Also ```BLAST+``` tools must be installed on your computer. Again same genome as used for building models will be use to make BLAST DB. 
 
 -----------------------------------
 OUTPUTS
